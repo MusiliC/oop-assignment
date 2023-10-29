@@ -31,5 +31,6 @@
     - The class is implemented in each specific sport because each sport has a different governing body.
 ### Encapsulation
     - In my model package, created classes for BallGameModel and TrackGameModel with private properties
-    - Properties accessed through getters and setters, but only used getters method in the interface implementations
+    - I have setter methods implemented in TracServiceImpl class
+    - Getter methods implemented in both TrackServiceImpl and BallGameServiceImpl
 
