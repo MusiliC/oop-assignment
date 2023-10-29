@@ -1,10 +1,11 @@
 package com.cee.tech.oop.service.impl;
 
+import com.cee.tech.oop.service.GoverningBody;
 import com.cee.tech.oop.service.MartialArtI;
 import com.cee.tech.oop.service.RefereeServiceI;
 import com.cee.tech.oop.service.SportServiceI;
 
-public class MartialArtServiceImp implements SportServiceI, MartialArtI, RefereeServiceI {
+public class MartialArtServiceImp extends GoverningBody implements SportServiceI, MartialArtI, RefereeServiceI {
     @Override
     public void martialArtStyle() {
         System.out.println("Martial Art style: Taekwondo");
@@ -32,5 +33,10 @@ public class MartialArtServiceImp implements SportServiceI, MartialArtI, Referee
     @Override
     public void centerReferee() {
         System.out.println("Taekwondo Referee: Andrew Jay");
+    }
+
+    @Override
+    public void whichBody() {
+        System.out.println("Governing body: Japan Karate Federation (JKF)");
     }
 }

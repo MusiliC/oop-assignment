@@ -1,7 +1,9 @@
-# oop-assignment
+# OOP-Assignment
 
 ### SOLID Principles
 #### The Single Responsibility Principle
+    - Through encapsulation, and in models package achieved single responsibility principle
+    - Each implementation is defined under each specific model.
 #### The Liskov Substitution Principle
     - Subsituting base class with sub class and still running without an error
     - RefereeServiceI class is th base class for BallGamesServiceI and MartialArtI classes
@@ -18,9 +20,16 @@
      - I have created different instances of classes 
      - From the app class, instances are taking different forms of base classes implementing polymorphism
 #### Run time(Dynamic) polymorphism
-     - Add implementation
+     - Methods declared SportServiceI interface have been overriden in subclasses
+     - Thus implementing run time polymorphism
 ### Inheritance
-    - Implemented inheritance between interfaces where:
-    - BallGamesServiceI and MartialArtI class has inherited from RefereeServiceI
+    - Implemented inheritance between interfaces: refereeServiceI extends sportServiceI
+    - Implementation of all the interfaces are extending abstract class
 ### Abstraction
+    - Created GoverningBody abstract class with two mwthods
+    - An abstract method (WhichBody()) and a normal method 
+    - The class is implemented in each specific sport because each sport has a different governing body.
+### Encapsulation
+    - In my model package, created classes for BallGameModel and TrackGameModel with private properties
+    - Properties accessed through getters and setters, but only used getters method in the interface implementations
 
